@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Hair back -->
+    <path
+        android:fillColor="#4A3728"
+        android:pathData="M60,70 C60,40 80,25 100,25 C120,25 140,40 140,70 L140,110 C140,120 130,125 120,118 L120,90 C120,80 110,75 100,75 C90,75 80,80 80,90 L80,118 C70,125 60,120 60,110 Z" />
+
+    <!-- Face -->
+    <path
+        android:fillColor="#FFD9B3"
+        android:pathData="M75,65 C75,45 85,35 100,35 C115,35 125,45 125,65 C125,85 115,98 100,98 C85,98 75,85 75,65 Z" />
+
+    <!-- Cheeks -->
+    <path
+        android:fillColor="#FFB3A7"
+        android:pathData="M78,72 a6,5 0 1,0 12,0 a6,5 0 1,0 -12,0" />
+    <path
+        android:fillColor="#FFB3A7"
+        android:pathData="M110,72 a6,5 0 1,0 12,0 a6,5 0 1,0 -12,0" />
+
+    <!-- Eyes -->
+    <path
+        android:fillColor="#2B2118"
+        android:pathData="M86,62 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" />
+    <path
+        android:fillColor="#2B2118"
+        android:pathData="M106,62 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" />
+
+    <!-- Smile -->
+    <path
+        android:fillColor="#C2185B"
+        android:strokeColor="#C2185B"
+        android:strokeWidth="2"
+        android:pathData="M90,80 Q100,90 110,80" />
+
+    <!-- Hair front bangs -->
+    <path
+        android:fillColor="#4A3728"
+        android:pathData="M70,55 C70,40 82,30 100,30 C118,30 130,40 130,55 C124,48 112,44 100,44 C88,44 76,48 70,55 Z" />
+
+    <!-- Body / shirt -->
+    <path
+        android:fillColor="#F48FB1"
+        android:pathData="M70,118 C70,108 84,100 100,100 C116,100 130,108 130,118 L130,165 L70,165 Z" />
+
+    <!-- Open book -->
+    <path
+        android:fillColor="#FCE4EC"
+        android:strokeColor="#C2185B"
+        android:strokeWidth="2"
+        android:pathData="M55,135 L100,128 L145,135 L145,160 L100,153 L55,160 Z" />
+    <path
+        android:fillColor="#C2185B"
+        android:pathData="M99,129 L101,129 L101,153 L99,153 Z" />
+
+</vector>

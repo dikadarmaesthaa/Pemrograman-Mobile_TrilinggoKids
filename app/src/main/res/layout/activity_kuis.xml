@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen_default">
+
+    <include
+        android:id="@+id/topBar"
+        layout="@layout/layout_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvKuis1"
+        style="@style/TitleYellowBubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/kuis_suku_kata_line1"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topBar" />
+
+    <TextView
+        android:id="@+id/tvKuis2"
+        style="@style/TitleYellowBubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_suku_kata"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvKuis1" />
+
+    <!-- Question content area: either mic-only or image+partial syllable -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/questionArea"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@id/answersGrid"
+        app:layout_constraintTop_toBottomOf="@id/tvKuis2">
+
+        <ImageView
+            android:id="@+id/ivQuestionImage"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@null"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btnMicQuestion"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/bg_mic_button"
+            android:contentDescription="@string/content_desc_mic"
+            android:padding="16dp"
+            android:src="@drawable/ic_mic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvDengarkan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/dengarkan"
+            android:textColor="@color/text_pink"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@id/btnMicQuestion"
+            app:layout_constraintStart_toStartOf="@id/btnMicQuestion"
+            app:layout_constraintTop_toBottomOf="@id/btnMicQuestion" />
+
+        <!-- Partial syllable row: known syllable card + blank/guess card -->
+        <LinearLayout
+            android:id="@+id/partialSyllableRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivQuestionImage">
+
+            <TextView
+                android:id="@+id/tvKnownSyllable"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_tablet_frame"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:textColor="@color/card_pink"
+                android:textSize="32sp"
+                tools:text="Ma" />
+
+            <TextView
+                android:id="@+id/tvBlankSyllable"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_tablet_frame"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="•••"
+                android:textColor="@color/text_dark"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- 2x2 answer grid -->
+    <GridLayout
+        android:id="@+id/answersGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:columnCount="2"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:rowCount="2"
+        app:layout_constraintBottom_toTopOf="@id/btnNextQuestion">
+
+        <Button
+            android:id="@+id/btnAnswer0"
+            style="@style/AnswerButton"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:layout_rowWeight="1"
+            tools:text="DA - DU" />
+
+        <Button
+            android:id="@+id/btnAnswer1"
+            style="@style/AnswerButton"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:layout_rowWeight="1"
+            tools:text="DA - DA" />
+
+        <Button
+            android:id="@+id/btnAnswer2"
+            style="@style/AnswerButton"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:layout_rowWeight="1"
+            tools:text="DU - DA" />
+
+        <Button
+            android:id="@+id/btnAnswer3"
+            style="@style/AnswerButton"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:layout_rowWeight="1"
+            tools:text="DO - DO" />
+
+    </GridLayout>
+
+    <ImageButton
+        android:id="@+id/btnNextQuestion"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/content_desc_next"
+        android:src="@drawable/ic_arrow_forward"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Feedback dialog overlay -->
+    <View
+        android:id="@+id/dimOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/feedbackCard"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_feedback_card"
+        android:elevation="12dp"
+        android:padding="20dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivFeedbackIcon"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@null"
+            app:layout_constraintEnd_toStartOf="@id/btnFeedbackNext"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_correct_circle" />
+
+        <ImageButton
+            android:id="@+id/btnFeedbackNext"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/content_desc_next"
+            android:src="@drawable/ic_arrow_forward_red"
+            app:layout_constraintBottom_toBottomOf="@id/ivFeedbackIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/ivFeedbackIcon" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/sky_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivFeedbackIcon" />
+
+        <TextView
+            android:id="@+id/tvFeedbackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/text_pink"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider"
+            tools:text="@string/jawaban_benar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

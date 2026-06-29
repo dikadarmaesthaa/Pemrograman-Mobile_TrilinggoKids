@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Trilinggo Kids</string>
+
+    <!-- Splash / Welcome -->
+    <string name="app_title_line1">TRILINGGO</string>
+    <string name="app_title_line2">KIDS</string>
+    <string name="btn_sign_in">SIGN IN</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_play">PLAY</string>
+
+    <!-- Auth -->
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Konfirmasi Password</string>
+    <string name="btn_masuk">Login</string>
+    <string name="btn_daftar">Daftar</string>
+    <string name="text_belum_punya_akun">Belum punya akun? Daftar di sini</string>
+    <string name="text_sudah_punya_akun">Sudah punya akun? Masuk di sini</string>
+    <string name="error_field_required">Field ini tidak boleh kosong</string>
+    <string name="error_password_mismatch">Password tidak sama</string>
+    <string name="error_user_exists">Username sudah terdaftar</string>
+    <string name="error_login_failed">Username atau password salah</string>
+    <string name="success_register">Pendaftaran berhasil, silakan login</string>
+
+    <!-- Home -->
+    <string name="greeting_hi">Hi %1$s !</string>
+    <string name="ayo_belajar_line1">AYO</string>
+    <string name="ayo_belajar_line2">BELAJAR</string>
+    <string name="menu_huruf">HURUF</string>
+    <string name="menu_suku_kata">SUKU KATA</string>
+    <string name="menu_kuis">KUIS</string>
+
+    <!-- Belajar Huruf -->
+    <string name="ayo_belajar_huruf">AYO BELAJAR HURUF</string>
+    <string name="content_desc_mic">Dengarkan pengucapan</string>
+    <string name="content_desc_next">Selanjutnya</string>
+    <string name="content_desc_back">Sebelumnya</string>
+
+    <!-- Belajar Suku Kata -->
+    <string name="belajar_suku_kata">BELAJAR SUKU KATA</string>
+
+    <!-- Kuis -->
+    <string name="pilih_level_line1">PILIH</string>
+    <string name="pilih_level_line2">LEVEL</string>
+    <string name="kuis_suku_kata_line1">KUIS</string>
+    <string name="kuis_suku_kata_line2">SUKU KATA</string>
+    <string name="dengarkan">Dengarkan</string>
+    <string name="jawaban_benar">Jawaban Kamu Benar.</string>
+    <string name="jawaban_salah">Jawaban Kamu Salah.</string>
+
+    <!-- Score -->
+    <string name="score_line1">SCORE</string>
+    <string name="score_line2">KAMU</string>
+    <string name="score_format">%1$d/%2$d</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Pengaturan</string>
+    <string name="btn_logout">Logout</string>
+</resources>
