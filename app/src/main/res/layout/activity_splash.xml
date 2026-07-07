@@ -19,28 +19,28 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/ivLogo"
-        android:layout_width="280dp"
-        android:layout_height="160dp"
-        android:layout_marginTop="64dp"
-        android:scaleType="centerCrop"
+        android:id="@+id/ivMascot"
+        android:layout_width="720dp"
+        android:layout_height="720dp"
+        android:layout_marginTop="20dp"
         android:contentDescription="@null"
+        android:scaleType="centerInside"
         android:src="@drawable/tulisantrilinggo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/ivMascot"
+        android:id="@+id/logo2"
         android:layout_width="220dp"
         android:layout_height="220dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="-480dp"
         android:contentDescription="@null"
         android:scaleType="centerCrop"
         android:src="@drawable/maskot"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ivLogo" />
+        app:layout_constraintTop_toBottomOf="@id/ivMascot" />
 
     <Button
         android:id="@+id/btnSignIn"
