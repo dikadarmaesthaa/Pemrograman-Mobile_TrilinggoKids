@@ -18,38 +18,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tvTitleLine1"
-        style="@style/TitleYellowBubble"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:text="@string/app_title_line1"
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="280dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="64dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@null"
+        android:src="@drawable/tulisantrilinggo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tvTitleLine2"
-        style="@style/TitleYellowBubble"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_title_line2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvTitleLine1" />
 
     <ImageView
         android:id="@+id/ivMascot"
         android:layout_width="220dp"
         android:layout_height="220dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="24dp"
         android:contentDescription="@null"
-        android:src="@drawable/maskot"
         android:scaleType="centerCrop"
+        android:src="@drawable/maskot"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvTitleLine2" />
+        app:layout_constraintTop_toBottomOf="@id/ivLogo" />
 
     <Button
         android:id="@+id/btnSignIn"
