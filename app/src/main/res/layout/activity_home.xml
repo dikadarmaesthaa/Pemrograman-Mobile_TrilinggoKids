@@ -17,7 +17,7 @@
         android:id="@+id/imgHeader"
         android:layout_width="216dp"
         android:layout_height="154dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="28dp"
         android:contentDescription="@null"
         android:scaleType="centerCrop"
         android:src="@drawable/ayo_belajar"
