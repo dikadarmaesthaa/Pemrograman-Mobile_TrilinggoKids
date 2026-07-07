@@ -46,7 +46,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/cardHuruf"
                 android:layout_width="match_parent"
-                android:layout_height="160dp"
+                android:layout_height="180dp"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/selector_card_menu"
                 android:clickable="true"
@@ -55,7 +55,7 @@
                 <ImageView
                     android:layout_width="216dp"
                     android:layout_height="154dp"
-                    android:layout_marginTop="3dp"
+                    android:layout_marginTop="12dp"
                     android:contentDescription="@null"
                     android:scaleType="centerCrop"
                     android:src="@drawable/menu_suku_kata"
@@ -70,7 +70,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/cardSukuKata"
                 android:layout_width="match_parent"
-                android:layout_height="160dp"
+                android:layout_height="180dp"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/selector_card_menu"
                 android:clickable="true"
@@ -79,7 +79,7 @@
                 <ImageView
                     android:layout_width="216dp"
                     android:layout_height="154dp"
-                    android:layout_marginTop="3dp"
+                    android:layout_marginTop="12dp"
                     android:contentDescription="@null"
                     android:scaleType="centerCrop"
                     android:src="@drawable/menu_suku_kata"
@@ -92,7 +92,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/cardKuis"
                 android:layout_width="match_parent"
-                android:layout_height="160dp"
+                android:layout_height="180dp"
                 android:background="@drawable/selector_card_menu"
                 android:clickable="true"
                 android:focusable="true">
@@ -100,7 +100,7 @@
                 <ImageView
                     android:layout_width="216dp"
                     android:layout_height="154dp"
-                    android:layout_marginTop="3dp"
+                    android:layout_marginTop="12dp"
                     android:contentDescription="@null"
                     android:scaleType="centerCrop"
                     android:src="@drawable/menu_suku_kata"
