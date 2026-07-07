@@ -55,10 +55,10 @@
                 <ImageView
                     android:layout_width="216dp"
                     android:layout_height="154dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginTop="23dp"
                     android:contentDescription="@null"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/menu_suku_kata"
+                    android:src="@drawable/abchuruf"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.496"
                     app:layout_constraintStart_toStartOf="parent"
@@ -79,10 +79,10 @@
                 <ImageView
                     android:layout_width="216dp"
                     android:layout_height="154dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginTop="23dp"
                     android:contentDescription="@null"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/menu_suku_kata"
+                    android:src="@drawable/suku_kata"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -100,10 +100,10 @@
                 <ImageView
                     android:layout_width="216dp"
                     android:layout_height="154dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginTop="23dp"
                     android:contentDescription="@null"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/menu_suku_kata"
+                    android:src="@drawable/kuis"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
