@@ -14,6 +14,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
+        android:id="@+id/imgHeader"
         android:layout_width="216dp"
         android:layout_height="154dp"
         android:layout_marginTop="18dp"
@@ -28,13 +29,14 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="0dp"
+        android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvBelajar1">
+        app:layout_constraintTop_toBottomOf="@id/imgHeader">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center_vertical"
             android:orientation="vertical"
             android:paddingStart="32dp"
             android:paddingTop="8dp"
