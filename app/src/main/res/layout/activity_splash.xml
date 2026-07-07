@@ -32,9 +32,9 @@
 
     <ImageView
         android:id="@+id/logo2"
-        android:layout_width="220dp"
-        android:layout_height="220dp"
-        android:layout_marginTop="-480dp"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="-460dp"
         android:contentDescription="@null"
         android:scaleType="centerCrop"
         android:src="@drawable/maskot"
