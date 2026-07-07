@@ -11,28 +11,17 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tvAyo"
-        style="@style/TitleYellowBubble"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/ayo_belajar_line1"
-        android:textSize="32sp"
+    <ImageView
+        android:id="@+id/AyoBelajar"
+        android:layout_width="216dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ayo_belajar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/topBar" />
-
-    <TextView
-        android:id="@+id/tvBelajarHuruf"
-        style="@style/TitleYellowBubble"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/menu_huruf"
-        android:textSize="26sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvAyo" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/letterContainer"
@@ -43,7 +32,7 @@
         app:layout_constraintBottom_toTopOf="@id/btnMic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvBelajarHuruf">
+        app:layout_constraintTop_toBottomOf="@id/AyoBelajar">
 
         <TextView
             android:id="@+id/tvLetterUpper"
@@ -52,22 +41,30 @@
             android:fontFamily="sans-serif-black"
             android:text="A"
             android:textColor="@color/card_pink"
-            android:textSize="120sp"
+            android:textSize="150sp"
             android:textStyle="bold"
+            android:shadowColor="#40000000"
+            android:shadowDx="15"
+            android:shadowDy="15"
+            android:shadowRadius="2"
             app:strokeColor="@color/primary_purple" />
 
         <TextView
             android:id="@+id/tvLetterLower"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginBottom="12dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="-20dp"
             android:fontFamily="sans-serif-black"
             android:gravity="bottom"
             android:text="a"
             android:textColor="@color/card_pink"
-            android:textSize="80sp"
-            android:textStyle="bold" />
+            android:textSize="100sp"
+            android:textStyle="bold"
+            android:shadowColor="#40000000"
+            android:shadowDx="15"
+            android:shadowDy="15"
+            android:shadowRadius="2" />
 
     </LinearLayout>
 
