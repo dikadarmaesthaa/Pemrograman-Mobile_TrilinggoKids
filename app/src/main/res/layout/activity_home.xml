@@ -13,28 +13,17 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tvAyo"
-        style="@style/TitleYellowBubble"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/ayo_belajar_line1"
-        android:textSize="32sp"
+    <ImageView
+        android:layout_width="216dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="18dp"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ayo_belajar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/topBar" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tvBelajar"
-        style="@style/TitleYellowBubble"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/ayo_belajar_line2"
-        android:textSize="32sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvAyo" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -55,43 +44,31 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/cardHuruf"
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
+                android:layout_height="160dp"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/selector_card_menu"
                 android:clickable="true"
                 android:focusable="true">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:fontFamily="sans-serif-black"
-                    android:text="ABC"
-                    android:textColor="@color/sky_blue"
-                    android:textSize="44sp"
+                <ImageView
+                    android:layout_width="216dp"
+                    android:layout_height="154dp"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="@null"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/menu_suku_kata"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <TextView
-                    android:id="@+id/tvLabelHuruf"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
-                    android:fontFamily="sans-serif-black"
-                    android:text="@string/menu_huruf"
-                    android:textColor="@color/primary_pink_dark"
-                    android:textSize="22sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/cardSukuKata"
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
+                android:layout_height="160dp"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/selector_card_menu"
                 android:clickable="true"
@@ -113,33 +90,22 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/cardKuis"
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
+                android:layout_height="160dp"
                 android:background="@drawable/selector_card_menu"
                 android:clickable="true"
                 android:focusable="true">
 
                 <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
+                    android:layout_width="216dp"
+                    android:layout_height="154dp"
                     android:layout_marginTop="18dp"
                     android:contentDescription="@null"
-                    android:src="@drawable/ic_quiz_bubble"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/menu_suku_kata"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <TextView
-                    android:id="@+id/tvLabelKuis"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
-                    android:fontFamily="sans-serif-black"
-                    android:text="@string/menu_kuis"
-                    android:textColor="@color/primary_pink_dark"
-                    android:textSize="22sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
