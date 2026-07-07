@@ -45,7 +45,8 @@
         android:layout_height="220dp"
         android:layout_marginTop="24dp"
         android:contentDescription="@null"
-        android:src="@drawable/ic_mascot_girl"
+        android:src="@drawable/maskot"
+        android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvTitleLine2" />
