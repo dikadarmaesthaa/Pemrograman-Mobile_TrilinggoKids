@@ -18,8 +18,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="@string/kuis_suku_kata_line1"
-        android:textSize="26sp"
+        android:text="AYO BELAJAR"
+        android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/topBar" />
@@ -30,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/menu_suku_kata"
-        android:textSize="22sp"
+        android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvBelajar1" />
@@ -39,9 +39,9 @@
         android:id="@+id/tabletFrame"
         android:layout_width="260dp"
         android:layout_height="340dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="90dp"
         android:background="@drawable/bg_tablet_frame"
-        android:padding="20dp"
+        android:padding="70dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvBelajar2">
@@ -55,15 +55,5 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <ImageButton
-        android:id="@+id/btnNext"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:layout_marginBottom="32dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/content_desc_next"
-        android:src="@drawable/ic_arrow_forward"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

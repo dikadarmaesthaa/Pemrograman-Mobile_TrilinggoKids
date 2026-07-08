@@ -18,10 +18,10 @@
         style="@style/TitleYellowBubble"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:src="@drawable/pilih_level"
-        android:text="@string/pilih_level_line1"
-        android:textSize="32sp"
+        android:text="PILIH LEVEL"
+        android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/topBar" />

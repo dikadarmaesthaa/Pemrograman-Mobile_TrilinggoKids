@@ -14,7 +14,6 @@ import com.trilinggo.kids.util.TtsHelper
 /**
  * Halaman "Belajar Suku Kata" tampilan tablet, menunjukkan 5 suku kata
  * dari satu grup (vokal AIUEO, atau konsonan seperti Ba Bi Bu Be Bo)
- * sesuai desain referensi (gambar tablet di Canva).
  *
  * Mengetuk salah satu huruf akan mengucapkannya lewat TTS.
  * Tombol next mengarah ke halaman contoh kata berilustrasi.
@@ -38,10 +37,7 @@ class BelajarVokalActivity : AppCompatActivity() {
         setupTopBar(label)
         populateGrid(syllables)
 
-        binding.btnNext.setOnClickListener {
-            startActivity(Intent(this, BelajarSukuKataActivity::class.java))
-            finish()
-        }
+
     }
 
     private fun setupTopBar(label: String) {
