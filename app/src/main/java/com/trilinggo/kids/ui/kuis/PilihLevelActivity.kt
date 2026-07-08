@@ -24,9 +24,8 @@ class PilihLevelActivity : AppCompatActivity() {
 
         setupTopBar()
 
-        binding.cardLevel1.setOnClickListener { startQuiz(1) }
-        binding.cardLevel2.setOnClickListener { startQuiz(2) }
-        binding.cardLevel3.setOnClickListener { startQuiz(3) }
+        binding.cardLevel1.setOnClickListener { startQuiz(2) }
+        binding.cardLevel2.setOnClickListener { startQuiz(1) }
     }
 
     private fun setupTopBar() {
