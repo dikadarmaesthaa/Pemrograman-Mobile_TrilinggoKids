@@ -46,7 +46,12 @@ object LearningRepository {
         SyllableWord(listOf("BA", "BI"), R.drawable.ic_word_babi),
         SyllableWord(listOf("BA", "TU"), R.drawable.ic_word_batu),
         SyllableWord(listOf("DA", "DU"), R.drawable.ic_word_dadu),
-        SyllableWord(listOf("MA", "TA"), R.drawable.ic_word_mata)
+        SyllableWord(listOf("MA", "TA"), R.drawable.ic_word_mata),
+        SyllableWord(listOf("BO", "LA"), R.drawable.ic_word_dadu),
+        SyllableWord(listOf("BU", "KU"), R.drawable.ic_word_aku),
+        SyllableWord(listOf("BA", "TA"), R.drawable.ic_word_babi),
+        SyllableWord(listOf("GI", "GI"), R.drawable.ic_word_mata),
+        SyllableWord(listOf("TO", "PI"), R.drawable.ic_word_batu)
     )
 
     /**
