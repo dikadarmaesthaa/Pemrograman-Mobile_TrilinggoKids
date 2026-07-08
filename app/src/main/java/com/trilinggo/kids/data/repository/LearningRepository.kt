@@ -42,16 +42,16 @@ object LearningRepository {
      * "Belajar Suku Kata" (per kata) maupun sumber soal ImageQuestion di kuis.
      */
     fun getAllSyllableWords(): List<SyllableWord> = listOf(
-        SyllableWord(listOf("A", "KU"), R.drawable.ic_word_aku),
-        SyllableWord(listOf("BA", "BI"), R.drawable.ic_word_babi),
-        SyllableWord(listOf("BA", "TU"), R.drawable.ic_word_batu),
-        SyllableWord(listOf("DA", "DU"), R.drawable.ic_word_dadu),
-        SyllableWord(listOf("MA", "TA"), R.drawable.ic_word_mata),
-        SyllableWord(listOf("BO", "LA"), R.drawable.ic_word_dadu),
-        SyllableWord(listOf("BU", "KU"), R.drawable.ic_word_aku),
-        SyllableWord(listOf("BA", "TA"), R.drawable.ic_word_babi),
-        SyllableWord(listOf("GI", "GI"), R.drawable.ic_word_mata),
-        SyllableWord(listOf("TO", "PI"), R.drawable.ic_word_batu)
+        SyllableWord(listOf("A", "KU"), R.drawable.aku),
+        SyllableWord(listOf("BA", "BI"), R.drawable.babi),
+        SyllableWord(listOf("BA", "TU"), R.drawable.batu),
+        SyllableWord(listOf("DA", "DU"), R.drawable.dadu),
+        SyllableWord(listOf("MA", "TA"), R.drawable.mata),
+        SyllableWord(listOf("BO", "LA"), R.drawable.bola),
+        SyllableWord(listOf("BU", "KU"), R.drawable.buku),
+        SyllableWord(listOf("BA", "TA"), R.drawable.bata),
+        SyllableWord(listOf("GI", "GI"), R.drawable.gigi),
+        SyllableWord(listOf("TO", "PI"), R.drawable.topi)
     )
 
     /**
